@@ -1,17 +1,20 @@
 [package]
-name = "tds"
-version = "0.1.5"
+name = "cowfarg"
+version = "0.1.8"
 authors = ["LFalch <lucas@wasd.dk>"]
 edition = "2018"
 
 [dependencies]
-ggez = "0.4"
-bincode = "1"
-serde_derive = "1"
-serde = "1"
+ggez = "0.5"
 self-compare = "0.2"
-sdl2 = "0.31"
-rand = "0.6"
+rand = "0.7"
+clipboard = "0.5"
+toml = "0.5"
+lazy_static = "1"
+log = "0.4"
+[dependencies.nalgebra]
+version = "0.18"
+features = ["mint"]
 
 [profile.dev]
 opt-level = 2
